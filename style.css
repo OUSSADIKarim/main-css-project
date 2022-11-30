@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto-Black.ttf) format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto-LightItalic.ttf) format("truetype");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --clr-primary: #1f2937;
+  --clr-secondary: #f9faf8;
+  --clr-tertiary: #e5e7eb;
+  --clr-quaternary: #3882f6;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+header {
+  background-color: var(--clr-primary);
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.header-container {
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: none;
+  color: var(--clr-secondary);
+}
+
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  transition: all ease-in-out 0.8s;
+}
+
+.logo:hover,
+.logo:active {
+  transform: scale(1.1);
+}
+
+.header-links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.header-links-container a,
+.hero-content_left p {
+  color: var(--clr-tertiary);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header-links-container li {
+  transition: all ease-in-out 0.8s;
+}
+
+.header-links-container li:hover,
+.header-links-container li:active {
+  /* text-decoration: underline; */
+  transform: scale(1.1);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-content_left {
+  flex: 1;
+}
+
+.hero-content_left h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: var(--clr-secondary);
+}
+
+.btn-cta {
+  background-color: var(--clr-quaternary);
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding-block: 0.25rem;
+  padding-inline: 1rem;
+  color: var(--clr-secondary);
+  cursor: pointer;
+  transition: all ease-in-out 0.8s;
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+  transform: scale(1.1);
+}
+
+.hero-img {
+  flex: 1;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.section-two {
+  padding: 2rem;
+}
+
+.section-two h2 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--clr-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.figures {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.figures img {
+  width: 100%;
+  height: 200px;
+  border: 2px solid var(--clr-quaternary);
+  border-radius: 20px;
+  transition: all ease-in-out 0.8s;
+}
+
+.figures img:hover,
+.figures img:active {
+  transform: scale(1.1);
+}
+
+.section-three {
+  background-color: var(--clr-tertiary);
+  margin-block: 2rem;
+  padding: 10rem;
+}
+
+.fig-quote blockquote {
+  font-weight: lighter;
+  font-style: italic;
+  color: var(--clr-primary);
+  font-size: 36px;
+}
+
+.fig-quote figcaption {
+  font-weight: bold;
+  text-align: end;
+}
+
+.section-four {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-quaternary);
+  margin-inline: auto;
+  margin-block: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  color: var(--clr-secondary);
+}
+
+.sectio-three_left p {
+  font-weight: lighter;
+}
+
+.btn_cta--secondary {
+  cursor: pointer;
+  padding-block: 0.25rem;
+  padding-inline: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--clr-secondary);
+  background-color: var(--clr-quaternary);
+  color: var(--clr-secondary);
+  transition: all ease-in-out 0.8s;
+}
+
+.btn_cta--secondary:hover,
+.btn_cta--secondary:active {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: var(--clr-primary);
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  color: var(--clr-secondary);
+}
